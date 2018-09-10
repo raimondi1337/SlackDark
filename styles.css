@@ -1,7 +1,7 @@
 :root {
- 	--bg: #222222;
-    --border: #3d3d3d;
-    --font: #a1a1a1;
+ 	--bg: #222822;
+    --border: #101610;
+    --font: #64ff64;
     --pageBg: #1d1d1d;
 }
 
@@ -17,6 +17,15 @@
 	color: var(--font) !important;
 }
 
+.search_form,
+.c-mrkdwn__pre,
+.c-message__image_container,
+#loading-zone,
+.c-search__input_and_close,
+.c-search__input_box,
+.c-search_autocomplete,
+footer,
+.c-search_autocomplete__suggestion_item,
 .client_channels_list_container,
 #team_menu, #team_menu_overlay,
 .p-channel_sidebar,
@@ -56,6 +65,8 @@ body:not(.loading) #team_menu.active, body:not(.loading) #team_menu:hover,
 .c-message__reply_bar--focus .c-message__reply_bar_view_thread, .c-message__reply_bar:hover .c-message__reply_bar_view_thread,
 .c-message_list__unread_divider__label,
 .c-member_slug,
+.btn_unstyle,
+.special_formatting,
 .c-mrkdwn__user_group,
 .p-message_pane__unread_banner,
 .c-file_container,
@@ -100,6 +111,10 @@ ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_c
  	border-color: var(--border) !important;   
 }
 
+.ts_icon_arrow_large_left,
+.ts_icon_arrow_large_right,
+.c-search_autocomplete__suggestion_item--selected,
+.internal_member_link,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider, .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar),
 .p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover, .p-channel_sidebar__close_container:hover,
 #footer,
@@ -138,13 +153,35 @@ ts-thread .thread_messages,
     border-color: var(--border) !important;
 }
 
+.member_image,
+.c-avatar__image{
+    opacity: 0.75;
+}
+
+.quote_bar {
+	background: var(--font) !important;   
+}
+
+.search_form {
+    border-color: var(--font) !important;
+}
+
+.supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-track {
+	background: none !important; 
+    box-shadow: none !important;
+}
+
+.supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-thumb {
+ 	background: var(--border) !important;   
+}
+
 #footer,
 .c-file_container--has_thumb .c-file__actions:before {
    background-image: none;
 }
 
 .p-channel_sidebar__channel--selected, .p-channel_sidebar__channel--selected:hover, .p-channel_sidebar__link--selected, .p-channel_sidebar__link--selected:hover {
- 	background-color: var(--border);   
+ 	background-color: var(--border) !important;   
 }
 
 .c-message_list__day_divider__label__pill,
