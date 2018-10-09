@@ -17,6 +17,9 @@
 	color: var(--font) !important;
 }
 
+.CodeMirror-code>div:before,
+.CodeMirror-code,
+.c-mrkdwn__broadcast,
 .search_form,
 .c-mrkdwn__pre,
 .c-message__image_container,
@@ -153,6 +156,10 @@ ts-thread .thread_messages,
     border-color: var(--border) !important;
 }
 
+.c-file_container--gradient:after{
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),var(--border));
+}
+
 .member_image,
 .c-avatar__image{
     opacity: 0.75;
@@ -166,7 +173,9 @@ ts-thread .thread_messages,
     border-color: var(--font) !important;
 }
 
-.supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-track {
+.supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-thumb,
+.supports_custom_scrollbar:not(.slim_scrollbar) .flex_content_scroller::-webkit-scrollbar-track,
+#client_body:not(.onboarding):not(.feature_global_nav_layout):before {
 	background: none !important; 
     box-shadow: none !important;
 }
