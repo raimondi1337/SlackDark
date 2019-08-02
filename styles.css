@@ -26,6 +26,15 @@
     color: var(--font) !important;
 }
 
+.c-button-unstyled,
+.p-file_viewer__header,
+.c-search__tabs,
+.c-search__results,
+.c-button--disabled,
+.c-scrollbar__hider,
+.p-classic_nav__right_header,
+.p-classic_nav__channel_header,
+.p-classic_nav__team_header,
 .c-search-autocomplete,
 .c-virtual_list__item,
 .p-threads_view__divider_label,
@@ -150,6 +159,8 @@ ts-thread .view_all_replies_container:hover,
     border-color: var(--border) !important;
 }
 
+.p-file_viewer__content,
+.c-message_group,
 .c-message_list__day_divider,
 .c-message,
 .p_threads_view_load_older_button,
@@ -234,6 +245,14 @@ ts-thread .thread_messages,
     border-color: var(--border) !important;
 }
 
+.c-mrkdwn__highlight {
+    background-color: #666666;
+}
+
+.p-workspace__primary_view_footer {
+    padding-top: 10px;
+}
+
 .c-file_container--gradient:after {
     background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), var(--border));
 }
@@ -274,6 +293,7 @@ ts-thread .thread_messages,
     background-image: none;
 }
 
+.p-workspace__secondary_view,
 .p-channel_sidebar__channel--selected,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected,
